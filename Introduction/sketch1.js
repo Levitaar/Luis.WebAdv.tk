@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(800,1000);
+  createCanvas(1000,600);
 }
 
 function draw() {
@@ -11,7 +11,7 @@ function draw() {
   
   textSize(30);
   fill(255);
-  text("Hello World", 30, 30);
+  text("My name is Luis Huiza", 60, 60);
   
   
 }
