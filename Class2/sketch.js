@@ -1,6 +1,35 @@
-console.log("Get Rekt");
 
-var counter = 3;
+var counter = 10;
+
+var printString = "";
+
+while(counter > 0) {
+    
+    var rng = Math.floor(Math.random() * 100);
+            
+        if(rng <= 25) {
+                    
+            printString = printString + "#";
+                    
+        } else if(rng > 25 && 50 >= rng) {
+                    
+            printString = printString + "@";
+                    
+        } else if(rng > 50 && 75 >= rng) {
+                    
+            printString = printString + "$";
+                    
+        } else if(rng > 75) {
+                    
+            printString = printString + "+";
+                    
+        }
+        
+    counter--;
+    
+}
+
+console.log(printString);
 
 // setInterval(function(){
     
@@ -17,11 +46,11 @@ var counter = 3;
 // var lastnum = false;
 
 // for(i = 0; i < 1000; i++){
-//     var newnum = Math.floor(Math.random()*10));
+//     var newnum = Math.floor(Math.random()*10);
     
 //     while(lastnum == newnum) {
 //         console.log("duplicate detected");
-//         newnum = Math.floor(Math.random()*10));
+//         newnum = Math.floor(Math.random()*10);
 //     }
 //     console.log(newnum);
 //     lastnum = newnum;
